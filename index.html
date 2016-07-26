@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./lib/css/dc.css">
+  <link rel="stylesheet" href="./css/custom.css">
+
+
+</head>
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./">Digital Dashboard</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-sm-4">
+        <div class="row">
+          <!-- Sports Code -->
+          <div class="col-sm-12">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Sports Code (initial visit)
+              </div>
+              <div class="chart-stage">
+                <div id="sports-code-row-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Sports Code -->
+
+          <!-- Season Stage -->
+          <div class="col-sm-12">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Season Stage (initial visit)
+              </div>
+              <div class="chart-stage">
+                <div id="season-stage-row-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Season Stage -->
+
+        </div>
+      </div>
+
+      <!-- Site -->
+      <div class="col-sm-8">
+
+        <!-- Drivers -->
+        <div class='row'>
+
+          <!-- Return Drivers -->
+          <div class='col-sm-4'>
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                <div>Return Drivers <b id="return-drivers-nd"></b></div>
+              </div>
+              <div class="chart-stage">
+                <div id='return-drivers-chart'></div>
+              </div>
+            </div>
+          </div>
+          <!-- Return Drivers -->
+
+          <!-- Paid -->
+          <div class='col-sm-4'>
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Paid Drivers
+              </div>
+              <div class="chart-stage">
+                <div id="paid-drivers-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Paid -->
+
+          <!-- Organic Drivers -->
+          <div class='col-sm-4'>
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Organic Drivers
+              </div>
+              <div class="chart-stage">
+                <div id="organic-drivers-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Organic Drivers -->
+
+        </div>
+        <!-- Drivers -->
+
+        <!-- Visits -->
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Site visits
+          </div>
+          <div class="chart-stage">
+            <div id='site-chart'></div>
+            <div id="us-chart"></div>
+          </div>
+        </div>
+        <!-- Visits -->
+
+        <!-- Business Value -->
+        <div class='row'>
+
+          <!-- Subscriptions -->
+          <div class="col-sm-6">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Subscriptions
+              </div>
+              <div class="chart-stage">
+                <div id="subscriptions-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Subscriptions -->
+
+          <!-- Revenue -->
+          <div class="col-sm-6">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Revenue
+              </div>
+              <div class="chart-stage">
+                <div id="revenue-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Revenue -->
+
+        </div>
+        <!-- Business Value -->
+
+      </div>
+      <!-- Site -->
+    </div>
+
+  </div>
+
+    <hr>
+
+  </div>
+  <script src="./lib/js/crossfilter.js"></script>
+  <script src="./lib/js/d3.js"></script>
+  <script src="./lib/js/dc.js"></script>
+  <script src="./lib/js/queue.js"></script>
+  <script src='./js/graphs.js' type='text/javascript'></script>
+</body>
+</html>

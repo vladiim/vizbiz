@@ -1,0 +1,13 @@
+
+#dashboards
+  %h3 Example Dashboards
+
+  .row
+    - %w(sales persona operational).each do |dashboard|
+      .col-xs-4
+        .panel.panel-default
+          .panel-heading= "#{dashboard.capitalize} Dashboard"
+          .panel-body
+            -# %img{src: 'http://www.cityofironmountain.com/images/pages/N501/dashboard%20thumbnail.jpg'}
+          .panel-footer
+            %a{href: "/dashboards/#{dashboard}", class: 'btn btn-primary'}= "View #{dashboard.capitalize} Dashboard"

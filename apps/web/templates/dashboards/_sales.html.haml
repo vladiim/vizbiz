@@ -1,0 +1,37 @@
+-# %p
+-#   Some questions to consider: How does time-of-day correlate with
+-#   = succeed "?" do
+-#     %a{:href => "javascript:filter([null, [100, 150], null, null])"} arrival delay
+-#   %a{:href => "javascript:filter([null, null, [1700, 2000], null])"} longer
+-#   or
+-#   %a{:href => "javascript:filter([null, null, [0, 300], null])"} shorter
+-#   flights more likely to arrive early? What happened on
+-#   = succeed "?" do
+-#     %a{:href => "javascript:filter([null, [80, 150], null, [new Date(2001, 0, 12), new Date(2001, 0, 13)]])"} January 12
+-#   %a{:href => "javascript:filter([null, null, null, [new Date(2001, 0, 27), new Date(2001, 0, 29)]])"} weekends
+-#   and
+-#   = succeed "," do
+-#     %a{:href => "javascript:filter([null, null, null, [new Date(2001, 0, 29), new Date(2001, 1, 3)]])"} weekdays
+-#   %a{:href => "javascript:filter([[4, 7], null, null, null])"} mornings
+-#   and
+-#   = succeed "?" do
+-#     %a{:href => "javascript:filter([[21, 24], null, null, null])"} nights
+
+#charts
+  #hour-chart.chart
+    .title Time of Day
+  #delay-chart.chart
+    .title Arrival Delay (min.)
+  #distance-chart.chart
+    .title Distance (mi.)
+  #date-chart.chart
+    .title Date
+%aside#totals
+  %span#active -
+  of
+  %span#total -
+  flights selected.
+#lists
+  #flight-list.list
+
+-# #chart
